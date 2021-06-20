@@ -1,0 +1,49 @@
+:root {
+  --primary-color: hsl(33, 65%, 50%);
+  --secondary-color: hsl(30, 6%, 44%);
+}
+html {
+  font-size: 15px;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/*Header*/
+header .flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+header .flex-container h1 {
+  color: var(--primary-color);
+  padding: 1.2rem 0;
+}
+header .flex-container nav ul {
+  display: flex;
+  list-style: none;
+}
+header .flex-container nav ul li {
+  font-weight: 500;
+  padding: 0 2.5rem;
+}
+@media (min-width: 600px) {
+  header .flex-container {
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+  }
+}
