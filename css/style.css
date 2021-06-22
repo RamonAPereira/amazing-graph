@@ -18,6 +18,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+h2,
+p {
+  color: var(--secondary-color);
+}
 /*Header*/
 header .flex-container {
   display: flex;
@@ -44,7 +48,7 @@ header .flex-container nav ul li {
     flex-direction: row;
     width: 90%;
     margin: auto;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
@@ -60,4 +64,20 @@ header .flex-container nav ul li {
 }
 .hero-section figcaption img {
   width: 18rem;
+}
+.hero-section article h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.hero-section article p {
+  margin: 2rem auto;
+  font-size: 1.2rem;
+}
+.hero-section article .btn {
+  background-color: var(--primary-color);
+  padding: 0.8rem 5rem;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
