@@ -46,9 +46,12 @@ header .flex-container nav ul li {
 @media (min-width: 600px) {
   header .flex-container {
     flex-direction: row;
-    width: 90%;
+    width: 95%;
     margin: auto;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+  header .flex-container nav ul li {
+    transform: scale(1.2);
   }
 }
 
@@ -80,4 +83,27 @@ header .flex-container nav ul li {
   color: #fff;
   font-size: 1.2rem;
   font-weight: 700;
+}
+@media (min-width: 600px) {
+  .hero-section {
+    flex-direction: row-reverse;
+    width: 95%;
+  }
+  .hero-section figcaption img {
+    width: 55rem;
+  }
+  .hero-section article {
+    height: 30rem;
+    text-align: left;
+    padding: 0;
+  }
+  .hero-section article h2 {
+    font-size: 4rem;
+  }
+  .hero-section article p {
+    font-size: 2rem;
+  }
+  .hero-section article .btn {
+    padding: 1.2rem 7rem;
+  }
 }
